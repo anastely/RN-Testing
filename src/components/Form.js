@@ -41,6 +41,8 @@ export const TextField = ({label, ...props}) => (
   </View>
 );
 
-export const ErrorText = ({text = ''}) => (
-  <Text style={styles.errorText}>{text}</Text>
+export const ErrorText = ({testID, text = ''}) => (
+  <Text testID={testID} style={styles.errorText}>
+    {text}
+  </Text>
 );
